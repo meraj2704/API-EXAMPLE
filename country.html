@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #country-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .country{
+            background-color: bisque;
+            border: 2px solid rgb(20, 20, 57);
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Country</h1></header>
+    <div id="country-detail"></div>
+    <section>Country Information</section>
+    <div id="country-container">
+
+    </div>
+    <button onclick="getCountryInformation()">Get country Information</button>
+    <script src="country.js"></script>
+</body>
+</html>
